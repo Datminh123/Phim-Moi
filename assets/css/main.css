@@ -18,7 +18,10 @@
 }
 
 .header__navbar-list li:hover .header__navbar-menu {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 290px;
+  z-index: 10;
 }
 
 .header__navbar-list {
@@ -52,7 +55,6 @@ img {
 .header__navbar-menu {
   position: absolute;
   list-style-type: none;
-  width: 150px;
   display: none;
   color: var(--white-color);
   background-color: var(--black-color);
@@ -84,6 +86,10 @@ img {
   outline: none;
 }
 
+.content {
+  display: block;
+}
+
 .container {
   background-color: #1a1a1a;
   width: 100%;
@@ -92,8 +98,8 @@ img {
   /* max-width: 1500px; */
   padding-left: 5%;
   padding-right: 5%;
-  min-height: 100vh;
   /* thêm đoạn ni để lúc chưa có đủ nội dụng thì ở bên dưới k bị khoảng trằng chiều cao tối thiểu là 1 màn hình */
+  min-height: 100vh;
 }
 
 .app__content {
@@ -146,6 +152,7 @@ img {
 }
 
 .heading {
+  width: 100%;
   padding: 16px 0;
   margin-bottom: 15px;
   position: relative;
@@ -195,14 +202,60 @@ img {
   padding: 2px 5px;
 }
 
-.content {
+.container {
   display: flex;
   width: 100%;
+} 
+
+
+.item__film {
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  
 }
 
-.content-item__img {
-  width: 100%;
- height: 300px;
- background-repeat: no-repeat;
- background-size: cover;
+/* footer */
+.footer {
+  padding-top: 16px;
+  background-color: var(--black-color);
+}
+
+.footer-list {
+  list-style: none;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footer-item__link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.footer-item__text {
+  font-size: 1.4rem;
+  font-weight: 6.8rem;
+  color: #ff8a00;
+  padding: 0 0 0 6px;
+}
+
+.footer-item__link:hover {
+  color: var(--primary-color);
+}
+
+.footer-logo {
+  padding: 0 60px 6px 45px;
+}
+
+.text-decoration {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--white-color);
+  align-items: center;
 }
