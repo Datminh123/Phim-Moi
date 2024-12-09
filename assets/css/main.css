@@ -30,8 +30,8 @@
 
 img {
   width: 100%;
-  height: 60px;
-  padding: 12px;
+  /* height: 60px; */
+  /* padding: 12px; */
 }
 
 .header__navbar-title a:hover {
@@ -165,7 +165,6 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 30px;
-  color: #a5cbef;
   background: #ff8a00;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -180,7 +179,8 @@ img {
 
 .tagsBlock li {
   display: inline-block;
-  background-color: #a5cbef;
+  background: #504d49;
+  color: #fff;
   padding: 2px 2px;
   cursor: pointer;
   list-style: none;
@@ -197,30 +197,69 @@ img {
   position: absolute;
   right: 0;
   color: #fff;
-  background-color: #a5cbef;
+  background: #504d49;
   font-size: 14px;
   padding: 2px 5px;
 }
 
 .container {
-  display: flex;
+  display: block;
   width: 100%;
 } 
 
 
 .item__film {
-  background-size: contain;
+  /* background-size: contain;
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   width: 100%;
   height: 100%;
-  
 }
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12 {
+  position: relative;
+}
+
+.name__film {
+  display: flex;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  font-size: 15px;
+  line-height: 1.3rem;
+  justify-content:left;
+  align-items: center;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.film-product__favourite {
+  position: absolute;
+  top: 0;
+  color: var(--white-color);
+  background: #1b2a39;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6rem;
+  z-index: 1;
+  border: 3px solid #1b2a3900;  
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #C02425 0%, #F0CB35 51%, #C02425 100%);
+}
+
 
 /* footer */
 .footer {
   padding-top: 16px;
   background-color: var(--black-color);
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .footer-list {
@@ -250,7 +289,7 @@ img {
 }
 
 .footer-logo {
-  padding: 0 60px 6px 45px;
+  padding-right: 30px;
 }
 
 .text-decoration {
